@@ -7,7 +7,6 @@ import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
 
-import main.java.seedu.address.model.person.Remark;
 import seedu.address.commons.util.ToStringBuilder;
 import seedu.address.model.tag.Tag;
 
@@ -28,8 +27,7 @@ public class Person {
     private final Set<Tag> tags = new HashSet<>();
 
     /**
-     * Creates a person with the specified remark.
-     */
+r
     public Person(Name name, Phone phone, Email email, Address address, Set<Tag> tags) {
         this(name, phone, email, address, new Remark(""), tags);
     }
