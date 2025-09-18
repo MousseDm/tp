@@ -7,6 +7,7 @@ import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
 
+import main.java.seedu.address.model.person.Remark;
 import seedu.address.commons.util.ToStringBuilder;
 import seedu.address.model.tag.Tag;
 
@@ -27,14 +28,15 @@ public class Person {
     private final Set<Tag> tags = new HashSet<>();
 
     /**
-     * Every field must be present and not null.
+     * Creates a person with the specified remark.
      */
-    // 5-arg ctor delegates to 6-arg ctor
     public Person(Name name, Phone phone, Email email, Address address, Set<Tag> tags) {
         this(name, phone, email, address, new Remark(""), tags);
     }
 
-    // 6-arg ctor sets remark
+    /**
+     * Creates a person with an empty remark.
+     */
     public Person(Name name, Phone phone, Email email, Address address, Remark remark, Set<Tag> tags) {
         requireAllNonNull(name, phone, email, address, remark, tags);
         this.name = name;
@@ -44,7 +46,6 @@ public class Person {
         this.remark = remark;
         this.tags.addAll(tags);
     }
-
 
     public Name getName() {
         return name;

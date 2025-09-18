@@ -8,6 +8,9 @@ import static java.util.Objects.requireNonNull;
 public class Remark {
     public final String value;
 
+    /**
+     * Free-form note attached to a person.
+     */
     public Remark(String value) {
         requireNonNull(value);
         this.value = value;
