@@ -68,9 +68,9 @@ class JsonAdaptedPerson {
         this.phone = phone;
         this.email = email;
         this.address = address;
-        this.remark = null;            // tests don't provide remark
+        this.remark = null;
         if (tags != null) {
-            this.tagged.addAll(tags);  // map old 'tags' param to our 'tagged' list
+            this.tagged.addAll(tags);
         }
     }
 

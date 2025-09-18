@@ -27,13 +27,14 @@ public class Person {
     private final Set<Tag> tags = new HashSet<>();
 
     /**
-r
+     * Creates a person with an empty remark.
+     */
     public Person(Name name, Phone phone, Email email, Address address, Set<Tag> tags) {
         this(name, phone, email, address, new Remark(""), tags);
     }
 
     /**
-     * Creates a person with an empty remark.
+     * Creates a person with the specified remark.
      */
     public Person(Name name, Phone phone, Email email, Address address, Remark remark, Set<Tag> tags) {
         requireAllNonNull(name, phone, email, address, remark, tags);
