@@ -5,13 +5,16 @@ import static seedu.address.model.Model.PREDICATE_SHOW_ALL_PERSONS;
 
 import java.util.List;
 
-import seedu.address.logic.Messages;                    // <- correct package
-import seedu.address.commons.core.index.Index;
+import seedu.address.commons.core.index.Index;   // <-- Index before Messages
+import seedu.address.logic.Messages;
 import seedu.address.logic.commands.exceptions.CommandException;
 import seedu.address.model.Model;
 import seedu.address.model.person.Person;
 import seedu.address.model.person.Remark;
 
+/**
+ * Edits the remark of the person at the given index.
+ */
 public class RemarkCommand extends Command {
     public static final String COMMAND_WORD = "remark";
 
@@ -21,12 +24,13 @@ public class RemarkCommand extends Command {
             + "Parameters: INDEX (must be a positive integer) r/REMARK\n"
             + "Example: " + COMMAND_WORD + " 1 r/Likes to swim.";
 
-    public static final String MESSAGE_ADD_REMARK_SUCCESS    = "Added remark to Person: %1$s";
+    public static final String MESSAGE_ADD_REMARK_SUCCESS = "Added remark to Person: %1$s";
     public static final String MESSAGE_DELETE_REMARK_SUCCESS = "Removed remark from Person: %1$s";
 
     private final Index index;
     private final Remark remark;
 
+    /** Creates a command to set {@code remark} for the person at {@code index}. */
     public RemarkCommand(Index index, Remark remark) {
         requireNonNull(index);
         requireNonNull(remark);
@@ -62,8 +66,12 @@ public class RemarkCommand extends Command {
 
     @Override
     public boolean equals(Object other) {
-        if (other == this) return true;
-        if (!(other instanceof RemarkCommand)) return false;
+        if (other == this) {
+            return true;
+        }
+        if (!(other instanceof RemarkCommand)) {
+            return false;
+        }
         RemarkCommand o = (RemarkCommand) other;
         return index.equals(o.index) && remark.equals(o.remark);
     }
