@@ -38,8 +38,9 @@
     },
     {
       "src": "DeveloperGuide.md",
+      "title": "Developer Guide",
       "headings": {
-        "ab-3-developer-guide": "AB-3 Developer Guide",
+        "estatesearch-developer-guide": "EstateSearch Developer Guide",
         "acknowledgements": "Acknowledgements",
         "setting-up-getting-started": "Setting up, getting started",
         "design": "Design",
@@ -61,8 +62,16 @@
         "glossary": "Glossary",
         "appendix-instructions-for-manual-testing": "Appendix: Instructions for manual testing",
         "launch-and-shutdown": "Launch and shutdown",
-        "deleting-a-person": "Deleting a person",
-        "saving-data": "Saving data"
+        "managing-persons": "Managing Persons",
+        "managing-property": "Managing Property",
+        "linking-properties-to-clients": "Linking Properties to Clients",
+        "deleting-owned-property": "Deleting owned property",
+        "deleting-interested-property": "Deleting interested property",
+        "appendix-effort": "Appendix: Effort",
+        "difficulty-level-and-challenges": "Difficulty Level and Challenges",
+        "effort-required": "Effort Required",
+        "achievements": "Achievements",
+        "reuse-and-efficiency": "Reuse and Efficiency"
       },
       "headingKeywords": {}
     },
@@ -107,6 +116,8 @@
       "title": "User Guide",
       "headings": {
         "welcome-to-estatesearch": "Welcome to EstateSearch!",
+        "how-to-use-this-user-guide": "How to use this User Guide",
+        "alert-boxes": "Alert Boxes",
         "getting-started": "Getting Started",
         "estatesearch-command-summary": "EstateSearch Command Summary",
         "features": "Features",
@@ -114,6 +125,7 @@
         "adding-a-person-add": "Adding a person: add",
         "adding-a-property-addp": "Adding a property: addp",
         "listing-all-persons-list": "Listing all persons : list",
+        "listing-all-properties-listp": "Listing all properties : listp",
         "editing-a-property-editp": "Editing a property : editp",
         "editing-a-person-edit": "Editing a person : edit",
         "setting-an-owned-property-for-a-person-setop": "Setting an owned Property for a Person : setop",
@@ -128,7 +140,8 @@
         "saving-the-data": "Saving the data",
         "editing-the-data-file": "Editing the data file",
         "faq": "FAQ",
-        "q-does-each-person-have-a-fixed-index-a-no-the-index-of-each-person-depends-on-the-current-filtered-list-showed-in-the-gui-the-index-of-a-person-may-change-when-the-list-is-filtered-using-the-find-command-or-when-persons-are-added-or-deleted": "Q: Does each person have a fixed index?\nA: No. The index of each person depends on the current filtered list showed in the GUI. The index of a person may change when the list is filtered using the find command or when persons are added or deleted.",
+        "glossary": "Glossary",
+        "acceptable-value-ranges-for-parameters": "Acceptable Value Ranges for Parameters",
         "known-issues": "Known issues"
       },
       "headingKeywords": {}
